@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f9f6f2" />
+    <meta
+      name="description"
+      content="Discover thoughtful skin care, trusted for generations. Find your NIVEA ritual."
+    />
+    <title>NIVEA India — Skin Care That Feels Like Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="NIVEA home">NIVEA<span>®</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#products">Shop care</a>
+        <a href="#routine">Your routine</a>
+        <a href="#ingredients">Our care</a>
+        <a href="#story">Our story</a>
+      </nav>
+      <a class="header-cta" href="#routine">Find your care <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A little care goes a long way</p>
+          <h1 id="hero-title">Skin care<br />that feels like <em>care.</em></h1>
+          <p class="hero-description">
+            A century of listening to skin. A lifetime of showing up for yours.
+            Find the little moments that make you feel more like you.
+          </p>
+          <a class="button button--blue magnetic" href="#products">
+            Find your feel <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="hero-note">
+            <span class="note-mark" aria-hidden="true">✳</span>
+            <span>Made for every day.<br /><strong>And every kind of you.</strong></span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="NIVEA Creme, a classic blue tin">
+          <div class="hero-photo">
+            <img
+              src="https://images.pexels.com/photos/8076231/pexels-photo-8076231.jpeg?auto=compress&amp;fit=crop&amp;w=1200"
+              alt=""
+              fetchpriority="high"
+            />
+            <span class="hero-photo-wash" aria-hidden="true"></span>
+          </div>
+          <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+          <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+          <span class="floating-note floating-note--top">A familiar kind<br />of comfort</span>
+          <span class="floating-note floating-note--bottom">Since 1911 <i>✳</i></span>
+          <div class="hero-product-wrap">
+            <div class="hero-product" id="hero-product">
+              <div class="tin-lid">
+                <div class="tin-rim"></div>
+                <div class="tin-face">
+                  <span class="tin-brand">NIVEA</span>
+                  <span class="tin-product-name">CREME</span>
+                  <span class="tin-product-sub">moisturising cream</span>
+                  <span class="tin-size">150 ml</span>
+                </div>
+              </div>
+              <div class="tin-side"></div>
+              <img
+                class="hero-tin-photo"
+                src="https://assets.beiersdorf.com/-/media/images/b/4/9/c/19dc66b0b8b14a91b8f63fc03a6a7d3a-screen.jpg?db=web&amp;ctx=IN&amp;hash=BF2251F0A995E7D8B94AA4F377910AE5"
+                alt=""
+                fetchpriority="high"
+              />
+            </div>
+            <div class="product-reflection" aria-hidden="true"></div>
+          </div>
+          <div class="hero-caption"><span>01</span> An icon, still close to home</div>
+        </div>
+        <a class="scroll-cue" href="#products"><span>Scroll to feel good</span><i aria-hidden="true"></i></a>
+        <div class="hero-side-label" aria-hidden="true">NIVEA · CARE FOR SKIN, CARE FOR YOU</div>
+      </section>
+
+      <section class="intro-strip" aria-label="Our promise">
+        <p>Care is not a step in your routine.</p>
+        <span class="intro-star" aria-hidden="true">✳</span>
+        <p>It’s the feeling you take with you.</p>
+      </section>
+
+      <section class="lotion-story" id="lotion-story" aria-label="The lotion scroll: a moment of care">
+        <div class="lotion-stage">
+          <div class="lotion-image" aria-label="A quiet moment of skin care">
+            <img
+              class="lotion-image-base"
+              src="https://images.pexels.com/photos/7269488/pexels-photo-7269488.jpeg?auto=compress&amp;fit=crop&amp;w=1400&amp;q=85"
+              alt="A woman gently applying moisturiser to her skin in soft natural light"
+              loading="lazy"
+            />
+            <span class="lotion-image-glow" aria-hidden="true"></span>
+            <svg class="cream-trail" viewBox="0 0 640 720" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="cream-gradient" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity=".94" />
+                  <stop offset=".48" stop-color="#fff8ec" stop-opacity=".83" />
+                  <stop offset="1" stop-color="#fff" stop-opacity=".96" />
+                </linearGradient>
+                <filter id="cream-softness" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="3" />
+                </filter>
+              </defs>
+              <path class="cream-trail-shadow" d="M75 542 C176 466 105 359 239 328 C369 296 452 377 493 274 C515 220 475 171 524 126" />
+              <path class="cream-trail-path" d="M75 542 C176 466 105 359 239 328 C369 296 452 377 493 274 C515 220 475 171 524 126" />
+              <circle class="cream-bead cream-bead--one" cx="239" cy="328" r="13" />
+              <circle class="cream-bead cream-bead--two" cx="493" cy="274" r="8" />
+            </svg>
+            <span class="skin-light skin-light--one" aria-hidden="true"></span>
+            <span class="skin-light skin-light--two" aria-hidden="true"></span>
+            <span class="lotion-particles" aria-hidden="true">
+              <i class="lotion-particle lotion-particle--one"></i>
+              <i class="lotion-particle lotion-particle--two"></i>
+              <i class="lotion-particle lotion-particle--three"></i>
+              <i class="lotion-particle lotion-particle--four"></i>
+              <i class="lotion-particle lotion-particle--five"></i>
+            </span>
+            <span class="lotion-image-grain" aria-hidden="true"></span>
+            <span class="image-step" id="lotion-image-step">A softer feeling, starts here</span>
+          </div>
+          <div class="lotion-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> A moment for your skin</p>
+            <p class="lotion-overline">THE LOTION SCROLL <span>01 — 03</span></p>
+            <h2 class="lotion-title" id="lotion-title">A little<br />goes a <em>long way.</em></h2>
+            <p class="lotion-description" id="lotion-description">
+              Take a breath. Let the day slow down. Feel care move at your own pace.
+            </p>
+            <div class="lotion-progress" aria-label="Application story progress">
+              <span class="lotion-progress-fill" id="lotion-progress-fill"></span>
+            </div>
+            <div class="lotion-step-labels" aria-hidden="true">
+              <span class="is-current">Begin</span><span>Apply</span><span>Absorb</span>
+            </div>
+            <a class="lotion-discover" href="#products">Meet your everyday care <span aria-hidden="true">↗</span></a>
+          </div>
+          <span class="lotion-side-note" aria-hidden="true">SLOW DOWN · SOFTEN UP · FEEL GOOD</span>
+          <span class="lotion-scroll-hint" aria-hidden="true"><i></i> SCROLL TO FEEL</span>
+        </div>
+      </section>
+
+      <section class="products section-pad" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Made for your moments</p>
+            <h2 id="products-title">Good things for<br /><em>your skin.</em></h2>
+          </div>
+          <p class="section-intro">The everyday essentials you reach for, made with the care your skin deserves.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter products by category">
+          <button class="filter-chip is-active" data-filter="all" aria-pressed="true">All care <span>05</span></button>
+          <button class="filter-chip" data-filter="face" aria-pressed="false">Face</button>
+          <button class="filter-chip" data-filter="body" aria-pressed="false">Body</button>
+          <button class="filter-chip" data-filter="men" aria-pressed="false">Men</button>
+          <button class="filter-chip" data-filter="sun" aria-pressed="false">Sun</button>
+        </div>
+        <div class="product-grid">
+          <button class="product-card product-card--feature" data-category="face body" data-product="creme" aria-label="Discover NIVEA Creme">
+            <span class="product-art product-art--creme">
+              <img class="product-photo product-photo--creme" src="https://assets.beiersdorf.com/-/media/images/b/4/9/c/19dc66b0b8b14a91b8f63fc03a6a7d3a-screen.jpg?db=web&amp;ctx=IN&amp;hash=BF2251F0A995E7D8B94AA4F377910AE5" alt="NIVEA Creme blue tin" loading="lazy" />
+              <span class="mini-tin">
+                <span class="mini-tin-lid"><span>NIVEA</span><b>CREME</b></span>
+                <span class="mini-tin-base"></span>
+              </span>
+              <span class="art-sparkle sparkle-one">✳</span>
+            </span>
+            <span class="card-info"><span><small>THE ORIGINAL</small><strong>NIVEA Creme</strong></span><i>↗</i></span>
+          </button>
+          <button class="product-card" data-category="face" data-product="soft" aria-label="Discover NIVEA Soft">
+            <span class="product-art product-art--soft">
+              <img class="product-photo product-photo--soft" src="https://assets.beiersdorf.com/-/media/images/8/d/4/2/5ad8692e386b4e83950442c47c6d0c4d-web_1010x1180_transparent_png.png?mh=1200&amp;mw=1200&amp;ctx=IN&amp;rx=0&amp;ry=325&amp;rw=1009&amp;rh=528&amp;hash=6ABF3FF02EF83FF63F71F8CBB4E00122" alt="NIVEA Soft moisturising cream" loading="lazy" />
+              <span class="soft-jar"><span class="soft-cap"></span><span class="soft-label"><b>NIVEA</b><small>soft</small></span></span>
+              <span class="art-sparkle sparkle-two">✳</span>
+            </span>
+            <span class="card-info"><span><small>LIGHT & LOVELY</small><strong>NIVEA Soft</strong></span><i>↗</i></span>
+          </button>
+          <button class="product-card" data-category="body" data-product="lotion" aria-label="Discover NIVEA Nourishing Lotion">
+            <span class="product-art product-art--lotion">
+              <img class="product-photo product-photo--lotion" src="https://assets.beiersdorf.com/-/media/images/8/c/b/0/c0cbadf7196844ababc82643b8d2a8d5-web_1010x1180_transparent_png.png?db=web&amp;ctx=IN&amp;hash=D88AAA1F3E71376E9DD03E2129CF5C5B" alt="NIVEA Nourishing Body Milk lotion" loading="lazy" />
+              <span class="lotion-bottle"><span class="bottle-cap"></span><span class="bottle-label"><b>NIVEA</b><small>Nourishing<br />body milk</small></span></span>
+            </span>
+            <span class="card-info"><span><small>DEEP NOURISHMENT</small><strong>Body Milk</strong></span><i>↗</i></span>
+          </button>
+          <button class="product-card" data-category="men" data-product="men" aria-label="Discover NIVEA Men Creme">
+            <span class="product-art product-art--men">
+              <span class="men-tin"><span class="men-face"><b>NIVEA</b><small>MEN</small><i>CREME</i></span></span>
+            </span>
+            <span class="card-info"><span><small>NO-FUSS, ALL CARE</small><strong>Men Creme</strong></span><i>↗</i></span>
+          </button>
+          <button class="product-card" data-category="sun body" data-product="sun" aria-label="Discover NIVEA Sun Protect">
+            <span class="product-art product-art--sun">
+              <span class="sun-bottle"><span class="sun-cap"></span><span class="sun-label"><b>NIVEA</b><small>SUN<br />PROTECT</small><i>50</i></span></span>
+              <span class="sun-disc"></span>
+            </span>
+            <span class="card-info"><span><small>OUT THERE, GENTLY</small><strong>Sun Protect</strong></span><i>↗</i></span>
+          </button>
+        </div>
+        <a class="text-link" href="#routine">Not sure where to start? <span>Let’s find your routine ↗</span></a>
+      </section>
+
+      <section class="routine-section" id="routine" aria-labelledby="routine-title">
+        <div class="routine-backdrop" aria-hidden="true"></div>
+        <div class="routine-layout">
+          <div class="routine-copy">
+            <p class="eyebrow eyebrow--light"><span class="eyebrow-line"></span> A ritual, made yours</p>
+            <h2 id="routine-title">Your skin.<br />Your <em>kind</em> of care.</h2>
+            <p>Tell us what your skin is asking for today. We’ll find a simple place to begin.</p>
+            <div class="routine-progress" aria-label="Routine builder progress">
+              <span class="progress-label">YOUR ROUTINE</span>
+              <span class="progress-track"><i id="routine-progress-fill"></i></span>
+              <span id="routine-step-label">01 / 02</span>
+            </div>
+          </div>
+          <div class="routine-card" aria-live="polite">
+            <div class="routine-step is-visible" id="routine-step-1">
+              <span class="step-kicker">FIRST, LET’S GET TO KNOW YOU</span>
+              <h3>How does your skin<br />usually feel?</h3>
+              <div class="choice-grid">
+                <button class="choice-button" data-skin="dry"><span>☼</span> A little dry</button>
+                <button class="choice-button" data-skin="balanced"><span>◌</span> Pretty balanced</button>
+                <button class="choice-button" data-skin="sensitive"><span>❋</span> Easily bothered</button>
+                <button class="choice-button" data-skin="unsure"><span>♡</span> It’s a mystery</button>
+              </div>
+              <p class="routine-hint">No wrong answers. Skin has its own seasons.</p>
+            </div>
+            <div class="routine-step" id="routine-step-2">
+              <span class="step-kicker">ONE MORE LITTLE THING</span>
+              <h3>What would feel<br />good right now?</h3>
+              <div class="choice-grid choice-grid--concern">
+                <button class="choice-button" data-concern="comfort"><span>♡</span> More comfort</button>
+                <button class="choice-button" data-concern="glow"><span>✧</span> A fresh glow</button>
+                <button class="choice-button" data-concern="protect"><span>☼</span> A little protection</button>
+                <button class="choice-button" data-concern="simple"><span>◌</span> Keep it simple</button>
+              </div>
+              <button class="back-link" id="routine-back" type="button">← Back</button>
+            </div>
+            <div class="routine-step routine-result" id="routine-result">
+              <span class="step-kicker">A LITTLE ROUTINE, JUST FOR YOU</span>
+              <span class="result-symbol" aria-hidden="true">✳</span>
+              <h3 id="result-title">A softer start.</h3>
+              <p id="result-copy">Comforting care for the days your skin needs a little extra kindness.</p>
+              <div class="result-products" id="result-products"></div>
+              <button class="text-button" id="routine-restart" type="button">Start again ↗</button>
+            </div>
+          </div>
+        </div>
+        <span class="routine-vertical" aria-hidden="true">A MOMENT FOR YOU</span>
+      </section>
+
+      <section class="ingredients section-pad" id="ingredients" aria-labelledby="ingredients-title">
+        <div class="ingredients-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Thoughtfully considered</p>
+          <h2 id="ingredients-title">Good care starts<br />with <em>good things.</em></h2>
+          <p>Every ingredient has a reason to be here. Tap to meet a few of the ones that help make skin feel cared for.</p>
+        </div>
+        <div class="ingredient-stage">
+          <div class="ingredient-orbit ingredient-orbit--outer" aria-hidden="true"></div>
+          <div class="ingredient-orbit ingredient-orbit--inner" aria-hidden="true"></div>
+          <button class="ingredient-orb ingredient-orb--glycerin" data-ingredient="glycerin" aria-pressed="false">
+            <span class="orb-core"><i>G</i></span><span class="orb-label">Glycerin</span>
+          </button>
+          <button class="ingredient-orb ingredient-orb--vitamin" data-ingredient="vitamin" aria-pressed="false">
+            <span class="orb-core"><i>C</i></span><span class="orb-label">Vitamin C</span>
+          </button>
+          <button class="ingredient-orb ingredient-orb--aloe" data-ingredient="aloe" aria-pressed="false">
+            <span class="orb-core"><i>°</i></span><span class="orb-label">Aloe vera</span>
+          </button>
+          <div class="ingredient-center" id="ingredient-detail" aria-live="polite">
+            <span class="center-mark">N</span>
+            <p>Care that starts<br />with a little curiosity.</p>
+            <small>CHOOSE AN INGREDIENT</small>
+          </div>
+          <span class="ingredient-caption ingredient-caption--one">A little science.<br />A lot of feeling.</span>
+          <span class="ingredient-caption ingredient-caption--two">Considered with care</span>
+        </div>
+      </section>
+
+      <section class="heritage" id="story" aria-labelledby="heritage-title">
+        <div class="heritage-image">
+          <div class="heritage-photo" role="img" aria-label="A quiet, sunlit moment of self care"></div>
+          <span class="heritage-image-note">A familiar blue.<br />A feeling that stays.</span>
+          <span class="heritage-image-index">EST. 1911 · STILL HERE</span>
+        </div>
+        <div class="heritage-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A story in every tin</p>
+          <h2 id="heritage-title">Some things<br />just <em>feel like home.</em></h2>
+          <p class="heritage-description">
+            It began with a little blue tin and a big idea: skin care could be for everyone.
+            Generations later, that simple promise still feels right at home in the everyday.
+          </p>
+          <div class="heritage-timeline">
+            <div class="timeline-item is-current">
+              <span>1911</span><p>A little tin. A new kind of care.</p>
+            </div>
+            <div class="timeline-item">
+              <span>THEN</span><p>Passed from one caring hand to another.</p>
+            </div>
+            <div class="timeline-item">
+              <span>TODAY</span><p>Still here for every version of you.</p>
+            </div>
+          </div>
+          <a class="heritage-link" href="#top">Care, for every generation <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="closing-note">
+        <span class="closing-mark" aria-hidden="true">✳</span>
+        <p>Take care of your skin.<br /><em>It’s the only one you’ve got.</em></p>
+        <a class="button button--blue magnetic" href="#products">Find your everyday <span class="button-arrow" aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark wordmark--footer" href="#top" aria-label="NIVEA home">NIVEA<span>®</span></a>
+        <p>A little care goes<br />a long way.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#products">Explore care</a><a href="#routine">Find your routine</a><a href="#story">Our story</a>
+        </nav>
+        <a class="back-top" href="#top">Back to top <span>↑</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> Beiersdorf. All care, all yours.</span>
+        <span>Made with care, for India <i>♡</i></span>
+        <span class="footer-legal"><a href="#top">Privacy</a><a href="#top">Terms</a></span>
+      </div>
+    </footer>
+
+    <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close product details">×</button>
+      <div class="dialog-art" id="dialog-art"></div>
+      <div class="dialog-copy">
+        <span class="dialog-kicker" id="dialog-kicker"></span>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <a class="button button--blue dialog-cta" href="#routine">Find your routine <span class="button-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </dialog>
+  </body>
+</html>
